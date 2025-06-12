@@ -2065,7 +2065,13 @@ namespace jacdac {
         if (jacdac.checkProxy()) jacdac.proxyFinalize()
     }
 
-    control.simmessages.send("jacdac/pxt-jacdac", undefined)
+    //% shim=TD_NOOP
+    function initSim() {
+        // needs to be here
+        control.simmessages.send("jacdac/pxt-jacdac", undefined)
+    }
+
+    initSim()
 
     // make sure physical is started deterministically
     // on micro:bit it allocates a buffer that should stay in the same place in memory
