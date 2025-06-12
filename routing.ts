@@ -2065,9 +2065,8 @@ namespace jacdac {
         if (jacdac.checkProxy()) jacdac.proxyFinalize()
     }
 
-    // start the simulator (don't rely on "jacdac" channel)
-    control.simmessages.send("jacdac/pxt-jacdac", null)
-    
+    control.simmessages.send("jacdac/pxt-jacdac", undefined)
+
     // make sure physical is started deterministically
     // on micro:bit it allocates a buffer that should stay in the same place in memory
     jacdac.__physStart()
