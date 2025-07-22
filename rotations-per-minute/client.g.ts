@@ -69,7 +69,7 @@ namespace modules {
         }
 
         /**
-         * Lowest rpm that can be reported.
+         * Highest rpm that can be reported.
          */
         //% callInDebugger
         //% group="Movement"
