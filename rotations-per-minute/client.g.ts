@@ -37,7 +37,7 @@ namespace modules {
          */
         //% callInDebugger
         //% group="Movement"
-        //% block="%rpm rpm"
+        //% block="%rpm rpm (rpm)"
         //% blockId=jacdac_rpm_rpm___get
         //% weight=100
         rpm(): number {
@@ -85,7 +85,7 @@ namespace modules {
          */
         //% group="Movement"
         //% blockId=jacdac_rpm_on_rpm_change
-        //% block="on %rpm rpm changed by %threshold"
+        //% block="on %rpm rpm changed by %threshold (rpm)"
         //% weight=96
         //% threshold.min=0
         //% threshold.defl=1
