@@ -3,7 +3,7 @@ namespace jacdac {
     export const SRV_ELECTRICAL_CONDUCTIVITY = 0x1f1f7277
     export const enum ElectricalConductivityReg {
         /**
-         * Read-only S/m u22.10 (uint32_t). The EC reading of the sensor.
+         * Read-only uS/cm u22.10 (uint32_t). The EC reading of the sensor.
          *
          * ```
          * const [electricalConductivity] = jdunpack<[number]>(buf, "u22.10")
@@ -12,7 +12,7 @@ namespace jacdac {
         ElectricalConductivity = 0x101,
 
         /**
-         * Read-only S/m u22.10 (uint32_t). The error on the EC reading.
+         * Read-only uS/cm u22.10 (uint32_t). The error on the EC reading.
          *
          * ```
          * const [electricalConductivityError] = jdunpack<[number]>(buf, "u22.10")
@@ -21,7 +21,7 @@ namespace jacdac {
         ElectricalConductivityError = 0x106,
 
         /**
-         * Constant S/m u22.10 (uint32_t). Lowest EC that can be reported.
+         * Constant uS/cm u22.10 (uint32_t). Lowest EC that can be reported.
          *
          * ```
          * const [minElectricalConductivity] = jdunpack<[number]>(buf, "u22.10")
@@ -30,7 +30,7 @@ namespace jacdac {
         MinElectricalConductivity = 0x104,
 
         /**
-         * Constant S/m u22.10 (uint32_t). Highest EC that can be reported.
+         * Constant uS/cm u22.10 (uint32_t). Highest EC that can be reported.
          *
          * ```
          * const [maxElectricalConductivity] = jdunpack<[number]>(buf, "u22.10")

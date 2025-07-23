@@ -42,7 +42,7 @@ namespace modules {
          */
         //% callInDebugger
         //% group="Environment"
-        //% block="%electricalconductivity electrical conductivity (S/m)"
+        //% block="%electricalconductivity electrical conductivity (uS/cm)"
         //% blockId=jacdac_electricalconductivity_electrical_conductivity___get
         //% weight=100
         electricalConductivity(): number {
@@ -93,7 +93,7 @@ namespace modules {
          */
         //% group="Environment"
         //% blockId=jacdac_electricalconductivity_on_electrical_conductivity_change
-        //% block="on %electricalconductivity electrical conductivity changed by %threshold (S/m)"
+        //% block="on %electricalconductivity electrical conductivity changed by %threshold (uS/cm)"
         //% weight=96
         //% threshold.min=0
         //% threshold.defl=1
