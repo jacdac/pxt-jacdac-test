@@ -1,0 +1,22 @@
+{
+    "name": "jacdac-electrical-conductivity",
+    "version": "0.0.0",
+    "description": "A sensor that measures electrical conductivity (EC) of a medium.",
+    "files": [
+        "constants.ts",
+        "client.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit",
+        "arcade",
+        "maker",
+        "calliopemini"
+    ],
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:jacdac/pxt-jacdac"
+    }
+}
