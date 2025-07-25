@@ -3,15 +3,6 @@ namespace jacdac {
     export const SRV_CURSOR_CHARACTER_SCREEN = 0x195ee163
     export const enum CursorCharacterScreenReg {
         /**
-         * Read-write string (bytes). Text to show.
-         *
-         * ```
-         * const [message] = jdunpack<[string]>(buf, "s")
-         * ```
-         */
-        Message = 0x2,
-
-        /**
          * Read-write ratio u0.16 (uint16_t). Enable or disable the screen.
          *
          * ```
@@ -40,11 +31,6 @@ namespace jacdac {
     }
 
     export namespace CursorCharacterScreenRegPack {
-        /**
-         * Pack format for 'message' data.
-         */
-        export const Message = "s"
-
         /**
          * Pack format for 'enabled' data.
          */
@@ -80,6 +66,15 @@ namespace jacdac {
          * ```
          */
         SetCursor = 0x85,
+
+        /**
+         * Argument: message string (bytes). Shows a message at the current cursor position.
+         *
+         * ```
+         * const [message] = jdunpack<[string]>(buf, "s")
+         * ```
+         */
+        Show = 0x86,
     }
 
     export namespace CursorCharacterScreenCmdPack {
@@ -87,5 +82,10 @@ namespace jacdac {
          * Pack format for 'setCursor' data.
          */
         export const SetCursor = "u8 u8"
+
+        /**
+         * Pack format for 'show' data.
+         */
+        export const Show = "s"
     }
 }
