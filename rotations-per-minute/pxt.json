@@ -1,6 +1,6 @@
 {
     "name": "jacdac-rotations-per-minute",
-    "version": "0.0.0",
+    "version": "1.9.38",
     "description": "A sensor that measures RPM (rotations per minute) of a rotor.",
     "files": [
         "constants.ts",

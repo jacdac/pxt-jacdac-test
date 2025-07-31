@@ -1,6 +1,6 @@
 {
     "name": "jacdac-cursor-character-screen",
-    "version": "0.0.0",
+    "version": "1.9.38",
     "description": "A screen that displays characters, typically a LCD/OLED character screen.",
     "files": [
         "constants.ts",
