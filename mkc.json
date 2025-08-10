@@ -1,5 +1,5 @@
 {
-    "targetWebsite": "https://makecode.microbit.org",
+    "targetWebsite": "https://makecode.microbit.org/beta",
     "overrides": {
         "testDependencies": {}
     },
