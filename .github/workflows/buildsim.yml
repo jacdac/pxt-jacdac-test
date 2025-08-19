@@ -1,6 +1,5 @@
 name: Jacdac simulator
 on:
-    push:
     workflow_dispatch:
 
 jobs:
