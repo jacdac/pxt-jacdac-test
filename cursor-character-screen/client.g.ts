@@ -1,6 +1,6 @@
 namespace modules {
     /**
-     * A screen that displays characters, typically a LCD/OLED character screen.
+     * An addressable LCD screen, with cursor position.
      **/
     //% fixedInstances blockGap=8
     export class CursorCharacterScreenClient extends jacdac.Client {
