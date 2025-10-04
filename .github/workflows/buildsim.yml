@@ -15,7 +15,7 @@ jobs:
             - name: clone jacdac-docs
               run: git clone https://github.com/jacdac/jacdac-docs
             - run: cd jacdac-docs; git submodule update --init --recursive
-            - run: cd jacdac-docs; git checkout makecodesim
+            - run: cd jacdac-docs; git checkout makecodesim-test
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v4
               with:
