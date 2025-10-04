@@ -44206,7 +44206,7 @@ var findPath=rawPathname=>{var trimmedPathname=trimPathname(absolutify(rawPathna
  *
  * @param {string} rawPathname A raw pathname
  * @return {string}
- */var cleanPath=rawPathname=>{var trimmedPathname=trimPathname(absolutify(rawPathname));var foundPath=trimmedPathname;foundPath=normalize_page_path(foundPath);return foundPath;};
+ */var cleanPath=rawPathname=>{var trimmedPathname=trimPathname(absolutify(rawPathname));var foundPath=trimmedPathname;if(foundPath==="/index.html"){foundPath="/";}foundPath=normalize_page_path(foundPath);return foundPath;};
 
 /***/ }),
 
