@@ -31,7 +31,7 @@ jobs:
                   GATSBY_GITHUB_REF: ${{ github.ref }}
                   GATSBY_GITHUB_SHA: ${{ github.sha }}
                   NODE_OPTIONS: --max-old-space-size=4096
-            - run: cd jacdac-docs/public; sed 's@foundPath==="/index.html"@false@g' app*.js > indexhtml2false.js; cp indexhtml2false.js app*.js
+            - run: cd jacdac-docs/public; sed 's@if(pagePath&&@if(false&&@g' app*.js > indexhtml2false.js; cp indexhtml2false.js app*.js
             - name: github pages
               uses: peaceiris/actions-gh-pages@v3
               with:
