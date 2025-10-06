@@ -35,7 +35,7 @@ namespace jacdac {
         header[0] = payload[0] = (crc >> 0) & 0xff
         header[1] = payload[1] = (crc >> 8) & 0xff
         // it is important to use the same channel as the 
-        // one used by the simx extension framework (jacdac/pxt-jacdac)
+        // one used by the simx extension framework (jacdac/pxt-jacdac-test)
         // in order to get the jacdac simulator to works
         control.simmessages.send("jacdac", payload)
     }

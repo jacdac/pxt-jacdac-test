@@ -6,8 +6,8 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "jacdac": "github:jacdac/pxt-jacdac",
-        "jacdac-microbit": "github:jacdac/pxt-jacdac/devices/microbit"
+        "jacdac": "github:jacdac/pxt-jacdac-test",
+        "jacdac-microbit": "github:jacdac/pxt-jacdac-test/devices/microbit"
     },
     "files": [
         "main.ts",

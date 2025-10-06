@@ -2068,7 +2068,7 @@ namespace jacdac {
     //% shim=TD_NOOP
     function initSim() {
         // needs to be here
-        control.simmessages.send("jacdac/pxt-jacdac", undefined)
+        control.simmessages.send("jacdac/pxt-jacdac-test", undefined)
     }
 
     initSim()

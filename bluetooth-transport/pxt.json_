@@ -4,7 +4,7 @@
     "description": "Support for sending Jacdac packets over BLE.",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:jacdac/pxt-jacdac"
+        "jacdac": "github:jacdac/pxt-jacdac-test"
     },
     "yotta": {
         "config": {
