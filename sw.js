@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-ca6350cc084c69c8af75.js"
+    "url": "webpack-runtime-6793457f0e4c725cbe86.js"
   },
   {
     "url": "styles.926e9654f55bdc522ebb.css"
@@ -37,7 +37,7 @@ self.__precacheManifest = [
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "a546c39060b945e2160aed7b7685640a"
+    "revision": "f316be985ea6b2fc3985daafb6b38a12"
   },
   {
     "url": "static/webfonts/s/roboto/v49/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiAo.woff2"
@@ -50,7 +50,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "381ffbd5bb8c6567bdebec297e4bdc88"
+    "revision": "4fa68732b404ba8c30935ce0e9f6313a"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -155,12 +155,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/simx/jacdac/pxt-jacdac-test/-`), ``)
+  pathname = pathname.replace(new RegExp(`^/beta/simx/jacdac/pxt-jacdac-test/-`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/simx/jacdac/pxt-jacdac-test/-/app-dcf7dd8ee1352b64c1d6.js`))) {
+  if (!resources || !(await caches.match(`/beta/simx/jacdac/pxt-jacdac-test/-/app-17e1ae21fb99fe9fa9db.js`))) {
     return await fetch(event.request)
   }
 
@@ -173,7 +173,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/simx/jacdac/pxt-jacdac-test/-/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/beta/simx/jacdac/pxt-jacdac-test/-/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
